@@ -1,0 +1,20 @@
+
+dubbo:
+  application:
+    name: pmall-shopping
+    owner: Mic
+  registry:
+    address: zookeeper://zk.pmall.com:2181
+    check: true
+    group: dubbo-dev
+    simplified: true
+  metadata-report:
+    address: zookeeper://zk.pmall.com:2181
+    retry-times: 30
+    cycle-report: false
+    group: dubbo-dev
+  scan:
+    base-packages: com.pmall.shopping
+
+swagger:
+  enable: true

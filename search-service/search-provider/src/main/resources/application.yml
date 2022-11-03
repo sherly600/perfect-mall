@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: search-provider
+
+mybatis:
+  mapper-locations: classpath*:com/pmall/search/dal/persistence/*Mapper.xml"
+  type-aliases-package: com.pmall.search.dal.entitys
+
+
